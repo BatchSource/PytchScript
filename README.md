@@ -1,5 +1,5 @@
 # PytchScript
-Pytch is a scripting language made for people who like both batch and python.
+Pytch is a scripting language design to be for absolute begineers.
 
 #### [Getting started](https://github.com/BatchSource/Pytch/blob/master/README.md#getting-started-1)
 
