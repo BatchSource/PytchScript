@@ -1,17 +1,17 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-#### [Getting started](https://github.com/BatchSource/Pytch/blob/master/README.md#getting-started-1)
+#### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
-[`Installation`](https://github.com/BatchSource/Pytch/blob/master/README.md#installation) [`Getting Started`](https://github.com/BatchSource/Pytch/blob/master/README.md#getting-started-1) [`Console`](https://github.com/BatchSource/Pytch/blob/master/README.md#console) [`Start.bat`](https://github.com/BatchSource/Pytch/blob/master/README.md#Console)
+[`Installation`](https://github.com/BatchSource/PytchScript/blob/master/README.md#installation) [`Getting Started`](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1) [`Console`](https://github.com/BatchSource/PytchScript/blob/master/README.md#console) [`Start.bat`](https://github.com/BatchSource/PytchScript/blob/master/README.md#Console)
 
-#### [Variables, Input, and Output](https://github.com/BatchSource/Pytch/blob/master/README.md#variables-input-and-output-1)
+#### [Variables, Input, and Output](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables-input-and-output-1)
 
-[`Variables`](https://github.com/BatchSource/Pytch/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/Pytch/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/Pytch/blob/master/README.md#wait) [`Pause`](https://github.com/BatchSource/Pytch/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/Pytch/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/Pytch/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/Pytch/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/Pytch/blob/master/README.md#spacing) [`Input`](https://github.com/BatchSource/Pytch/blob/master/README.md#input)
+[`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
 
-#### [Logic, Comments, and Misc](https://github.com/BatchSource/Pytch/blob/master/README.md#logic-comments-and-misc-1)
+#### [Logic, Comments, and Misc](https://github.com/BatchSource/PytchScript/blob/master/README.md#logic-comments-and-misc-1)
 
-[`Comments`](https://github.com/BatchSource/Pytch/blob/master/README.md#comments) [`Goto`](https://github.com/BatchSource/Pytch/blob/master/README.md#goto) [`If statements`](https://github.com/BatchSource/Pytch/blob/master/README.md#if-statements) [`If statements (multiple lines)`](https://github.com/BatchSource/Pytch/blob/master/README.md#if-statements-with-multiple-lines) [`Input`](https://github.com/BatchSource/Pytch/blob/master/README.md#input) [`If, and, else, or`](https://github.com/BatchSource/Pytch/blob/master/README.md#if-and-else-or) [`Random`](https://github.com/BatchSource/Pytch/blob/master/README.md#random) [`Integer Operatons`](https://github.com/BatchSource/Pytch/blob/master/README.md#integer-operations) [`Float Operations`](https://github.com/BatchSource/Pytch/blob/master/README.md#float-operations) [`For loops`](https://github.com/BatchSource/Pytch/blob/master/README.md#for-loops)
+[`Comments`](https://github.com/BatchSource/PytchScript/blob/master/README.md#comments) [`Goto`](https://github.com/BatchSource/PytchScript/blob/master/README.md#goto) [`If statements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements) [`If statements (multiple lines)`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements-with-multiple-lines) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input) [`If, and, else, or`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-and-else-or) [`Random`](https://github.com/BatchSource/PytchScript/blob/master/README.md#random) [`Integer Operatons`](https://github.com/BatchSource/PytchScript/blob/master/README.md#integer-operations) [`Float Operations`](https://github.com/BatchSource/PytchScript/blob/master/README.md#float-operations) [`For loops`](https://github.com/BatchSource/PytchScript/blob/master/README.md#for-loops)
 
 ----------------------
 
@@ -30,7 +30,7 @@ Now save it as a .pytch file.
 
 To run the file go ahead and open up Command Prompt and cd into the directory where Pytch.py is located, in this case we extracted it into our desktop, so lets cd into the directory.
 ```
-cd C:\Users\Pytch\Desktop\PytchScript-master\
+cd C:\Users\PytchScript\Desktop\PytchScript-master\
 ```
 Now to run it. Go ahead and type in the following:
 ```
@@ -38,7 +38,7 @@ python Pytch.py -r "<path to the pytch file>"
 ```
 Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
 ```
-python Pytch.py -r "C:\Users\Pytch\Desktop\file.pytch"
+python Pytch.py -r "C:\Users\PytchScript\Desktop\file.pytch"
 ```
 As soon as you press enter, you should see the following:
 ```
