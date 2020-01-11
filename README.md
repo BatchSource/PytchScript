@@ -21,12 +21,12 @@ Pytch is a scripting language design to be for absolute begineers.
 
 ## Installation
 
-Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file.
+Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file. You do not need to install any development software.
 
-You also need to run the following commands in cmd:
+If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file.
+You can execute commands like this:
 ```
-pip install pywin32
-pip install pynput
+pytch -c say Hello World
 ```
 
 ## Getting Started
@@ -44,11 +44,11 @@ cd C:\Users\PytchScript\Desktop\PytchScript-master\
 ```
 Now to run it. Go ahead and type in the following:
 ```
-python Pytch.py -r "<path to the pytch file>"
+pytch -r "<path to the pytch file>"
 ```
 Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
 ```
-python Pytch.py -r "C:\Users\PytchScript\Desktop\file.pytch"
+pytch -r "C:\Users\PytchScript\Desktop\file.pytch"
 ```
 As soon as you press enter, you should see the following:
 ```
@@ -59,7 +59,7 @@ Great, you created your first Pytch program! The next sections will teach you mo
 ### Console
 You can activate the console by doing:
 ```
-python Pytch.py --console
+pytch --console
 ```
 However, you cannot use goto in the the Pytch console.
 
