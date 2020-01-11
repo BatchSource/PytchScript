@@ -13,11 +13,19 @@ Pytch is a scripting language design to be for absolute begineers.
 
 [`Comments`](https://github.com/BatchSource/PytchScript/blob/master/README.md#comments) [`Goto`](https://github.com/BatchSource/PytchScript/blob/master/README.md#goto) [`If statements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements) [`If statements (multiple lines)`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements-with-multiple-lines) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input) [`If, and, else, or`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-and-else-or) [`Random`](https://github.com/BatchSource/PytchScript/blob/master/README.md#random) [`Integer Operatons`](https://github.com/BatchSource/PytchScript/blob/master/README.md#integer-operations) [`Float Operations`](https://github.com/BatchSource/PytchScript/blob/master/README.md#float-operations) [`For loops`](https://github.com/BatchSource/PytchScript/blob/master/README.md#for-loops)
 
+#### [Simulate Keyboard and Mouse Inputs](https://github.com/BatchSource/PytchScript/blob/master/README.md#simulate-keyboard-and-mouse-inputs-1)
+[`Keyboard Presses`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-presses) [`Keyboard Typing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-typing) [`Cursor Clicks`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-clicks) [`Cursor Movements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-movements)
 ----------------------
 
 ## Installation
 
 Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file.
+
+You also need to run the following commands in cmd:
+```
+pip install pywin32
+pip install pynput
+```
 
 ## Getting Started
 So now you have Pytch in your desktop, but now what? We don't have any code written for it so lets write something simple, a hello world program!
@@ -411,3 +419,70 @@ goto loop
 label escloop
 ```
 This will say Hello 100 times.
+
+You also can use the in-line loop feature to loop Hello 100 times.
+For example:
+```
+100 say Hello
+```
+This will also say Hello 100 times.
+You can also use a variable with this feature to create dynamic forloops.
+
+## Simulate Keyboard and Mouse Inputs
+
+Keyboard and mouse movements can be used with the `wait` command to create algorithms to automate boring work.
+
+### Keyboard Presses
+You can use the `key` command to simulate keyboard and mouse inputs.
+You can use `key press` to to use any of the function keys, arrow keys, backspace, enter, shift, space, tab, escape, delete, copy, and paste.
+
+You can also use the commands in order like this:
+```
+key press tab esc right
+```
+
+### Keyboard Typing
+You can use the `key type` command to type words.
+For example, you can type `Hello World` by doing:
+```
+key type Hello World
+```
+
+Remember, you have to use `&` to simulate multiple spaces.
+For example:
+```
+key type Hello&&&&World
+```
+This will create 4 spaces.
+
+### Cursor Clicks
+You can simulate cursor events with the `key cursor` command.
+To use clicks, you have to use `key cursor click`.
+
+For example:
+```
+key cursor click left
+```
+
+This will simulate a left click.
+Like the key presses, you can make multiple clicks in one line of code.
+
+For example:
+```
+key cursor click left right middle left left
+```
+
+You could also create a super auto clicker in one line of code by using the single-line forloop with the cursor click feature.
+You could do `-1 key cursor click left` to indefinetly left lick, however it does lag up your system due to the 10k-500k clicks per second.
+
+### Cursor Movements
+You can move the cursor with the `key cursor move` command.
+
+You need the XY value of the screen pixel to set the cursor position to.
+
+For example:
+```
+key cursor move 10 20
+```
+
+This will move the cursor pointer to the screen pixel X:10 and Y:20. 
