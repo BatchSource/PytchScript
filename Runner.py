@@ -21,7 +21,7 @@ def skipif(inputfile):
     for i in everyline[currentLine:]:
         testwords1 = i.split()
         try: comment = testwords1[0]
-        except IndexError: comment = 0
+        except IndexError: pass
         else:
             words1 = i.split()
             if words1[0] == ")": break
@@ -68,7 +68,7 @@ def callfile(words, varName, varValue, inputfile):
             word_counter += 1
         
         try: comment = words[0]
-        except IndexError: comment = 0
+        except IndexError: pass
         else: commands(varName, varValue, words, inputfile)
         currentLine+=1
 
@@ -77,19 +77,79 @@ def commands(varName, varValue, words, inputfile):
     if words[0].lower() == "say" or words[0].lower() == "print" or words[0].lower() == "echo":
         say = ' '.join([str(elem) for elem in words[1:]])
         print(str(say))
+    elif words[0].lower() == "key":
+        from pynput.keyboard import Key, Controller as KeyboardController
+        from pynput.mouse import Button, Controller as MouseController
+        import win32api
+        keyboard = KeyboardController()
+        mouse = MouseController()
+        if words[1].lower() == "cursor":
+            if words[2].lower() == "move":
+                win32api.SetCursorPos((int(words[3]),int(words[4])))
+            elif words[2].lower() == "click":
+                for i in words[3:]:
+                    if i.lower() == "left": mouse.press(Button.left); mouse.release(Button.left)
+                    elif i.lower() == "right": mouse.press(Button.right); mouse.release(Button.right)
+                    elif i.lower() == "middle": mouse.press(Button.middle); mouse.release(Button.middle)
+        elif words[1].lower() == "press":
+            for i in words[2:]:
+                if i.lower() == "ctrl" or i.lower() == "control":
+                    keyboard.press(Key.ctrl); keyboard.release(Key.ctrl)
+                elif i.lower() == "shift":
+                    try: comment = words[3]
+                    except IndexError: keyboard.press(Key.shift); keyboard.release(Key.shift)
+                    else:
+                        keyboard.press(Key.shift); keyboard.press(words[3])
+                        keyboard.release(words[3]); keyboard.release(Key.shift)              
+                elif i.lower() == "alt" or i.lower() == "option": keyboard.press(Key.alt); keyboard.release(Key.alt)
+                elif i.lower() == "copy":
+                    keyboard.press(Key.ctrl); keyboard.press('c')
+                    keyboard.release('c'); keyboard.release(Key.ctrl)
+                elif i.lower() == "paste":
+                    keyboard.press(Key.ctrl); keyboard.press('v')
+                    keyboard.release('v'); keyboard.release(Key.ctrl)
+                elif i.lower() == "tab": keyboard.press(Key.tab); keyboard.release(Key.tab)
+                elif i.lower() == "esc": keyboard.press(Key.esc); keyboard.release(Key.esc)
+                elif i.lower() == "f1": keyboard.press(Key.f1); keyboard.release(Key.f1)
+                elif i.lower() == "f2": keyboard.press(Key.f2); keyboard.release(Key.f2)
+                elif i.lower() == "f3": keyboard.press(Key.f3); keyboard.release(Key.f3)
+                elif i.lower() == "f4": keyboard.press(Key.f4); keyboard.release(Key.f4)
+                elif i.lower() == "f5": keyboard.press(Key.f5); keyboard.release(Key.f5)
+                elif i.lower() == "f6": keyboard.press(Key.f6); keyboard.release(Key.f6)
+                elif i.lower() == "f7": keyboard.press(Key.f7); keyboard.release(Key.f7)
+                elif i.lower() == "f8": keyboard.press(Key.f8); keyboard.release(Key.f8)
+                elif i.lower() == "f9": keyboard.press(Key.f9); keyboard.release(Key.f9)
+                elif i.lower() == "f10": keyboard.press(Key.f10); keyboard.release(Key.f10)
+                elif i.lower() == "f11": keyboard.press(Key.f11); keyboard.release(Key.f11)
+                elif i.lower() == "f12": keyboard.press(Key.f12); keyboard.release(Key.f12)
+                elif i.lower() == "delete" or i.lower() == "del": keyboard.press(Key.delete); keyboard.release(Key.delete)
+                elif i.lower() == "insert": keyboard.press(Key.insert); keyboard.release(Key.insert)
+                elif i.lower() == "enter": keyboard.press(Key.enter); keyboard.release(Key.enter)
+                elif i.lower() == "down": keyboard.press(Key.down); keyboard.release(Key.down)
+                elif i.lower() == "right": keyboard.press(Key.right); keyboard.release(Key.right)
+                elif i.lower() == "left": keyboard.press(Key.left); keyboard.release(Key.left)
+                elif i.lower() == "up": keyboard.press(Key.up); keyboard.release(Key.up)
+                elif i.lower() == "backspace": keyboard.press(Key.backspace); keyboard.release(Key.backspace)
+                elif i.lower() == "": keyboard.press(Key.backspace); keyboard.release(Key.backspace)        
+                else: keyboard.type(i)
+        elif words[1].lower() == "type":
+            typecontents = ' '.join([str(elem) for elem in words[2:]])
+            keyboard.type(typecontents)
+    
     elif words[0].lower() == "say." or words[0].lower() == "print." or words[0].lower() == "echo.": print("")
-    elif "#" in words[0].lower() or "label" in words[0].lower() or "(" == words[0] or ")" in words[0] or "::" in words[0].lower() or "//" in words[0].lower(): comment = 0 # Comment
+    elif "#" in words[0].lower() or "label" in words[0].lower() or "(" == words[0] or ")" in words[0] or "::" in words[0].lower() or "//" in words[0].lower(): pass # Comment
     elif words[0].lower() == "cmd":
         bat = ' '.join([str(elem) for elem in words[1:]])
         os.system(str(bat))
-    elif words[0].lower() == "quit": exit()
+    elif words[0].lower() == "quit" or words[0].lower() == "exit" or words[0].lower() == "stop": exit()
     elif words[0].lower() == "write.file":
         writefile = ''.join([str(elem) for elem in words[1]])
         writecontents = ' '.join([str(elem) for elem in words[2:]])
         with open(writefile, 'a+') as filehandle:
             filehandle.write(writecontents+'\n')
     elif words[0].lower() == "call": callfile(words, varName, varValue, inputfile)
-    elif "#" in words[0].lower() or "::" in words[0].lower() or "//" in words[0].lower(): comment = 0
+    elif words[0].lower() == "help" and fromfile == 0: os.system("start https://github.com/BatchSource/PytchScript/blob/master/README.md")
+    elif "#" in words[0].lower() or "::" in words[0].lower() or "//" in words[0].lower(): pass
     elif words[0].lower() == "write":
         write = ' '.join([str(elem) for elem in words[1:]])
         print(str(write), end=' ')
@@ -110,7 +170,7 @@ def commands(varName, varValue, words, inputfile):
         for linei in open_file:
             testwords = linei.split()
             try: comment = testwords[0]
-            except IndexError: comment = 0
+            except IndexError: pass
             else:
                 wordsinline = linei.split()
                 if wordsinline[0].lower() == "label" and wordsinline[1:] == words[1:]:
@@ -347,9 +407,21 @@ def commands(varName, varValue, words, inputfile):
                 commands(varName, varValue, words, inputfile)
             elif words[4] == "(" and fromfile == 1: skipif(inputfile)
     else:
-        invalid = ' '.join([str(elem) for elem in words])
-        print("\nInvalid syntax '" + str(invalid) + "'\n")
-        os.system("pause")
+        try: comment = int(words[0]) - 1
+        except TypeError:
+            invalid = ' '.join([str(elem) for elem in words])
+            print("\nInvalid syntax '" + str(invalid) + "'\n")
+            os.system("pause")
+        else:
+            if int(words[0]) <= -2 or int(words[0]) == 0 or int(words[0]) == 1:
+                print("\nYou cannot loop a command "+words[0]+" amount of times, however you can loop it indefinetly with -1.\n")
+                os.system("pause")                
+            else:
+                forloopamount = int(words[0]); forcounter = 0
+                words = words[1:]
+                while forcounter != forloopamount:
+                    commands(varName, varValue, words, inputfile)
+                    forcounter+=1
 
 def Runner(inputfile):
     global varName, varValue, currentLine, totalLine, counterofstuff, fromfile
@@ -383,13 +455,13 @@ def Runner(inputfile):
             word_counter += 1
         
         try: comment = words[0]
-        except IndexError: comment = 0
+        except IndexError: pass
         else: commands(varName, varValue, words, inputfile)
         currentLine+=1
         counterofstuff +=1
 
 def Console():
-    global varName, varValue, currentLine, totalLine, counterofstuff, fromfile, home
+    global varName, varValue, currentLine, totalLine, counterofstuff, fromfile
     fromfile = 0
     inputfile = 0
     sys.setrecursionlimit(10**8)
@@ -418,7 +490,7 @@ def Console():
             word_counter += 1
         
         try: comment = words[0]
-        except IndexError: comment = 0
+        except IndexError: pass
         else: commands(varName, varValue, words, inputfile)
         currentLine+=1
         counterofstuff+=1
