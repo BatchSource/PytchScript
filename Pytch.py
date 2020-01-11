@@ -3,6 +3,10 @@ import time
 from random import randrange
 from Runner import Runner
 from Runner import Console
+
+# Version
+version = '1.1'
+
 import sys
 sys.setrecursionlimit(10**8)
 
@@ -48,7 +52,7 @@ elif sys.argv[1] == '-r' or sys.argv[1] == '--run':
 elif sys.argv[1] == '--console' or sys.argv[1] == '-c':
     os.system("cls")
     varName = []; varValue = []
-    print("Pytch [Version 1.0]")
+    print(f"Pytch [Version {version}]")
     print("(c) 2020 Alex Irick. All rights reserved.\n")
     Console()
 else:
