@@ -95,12 +95,7 @@ def commands(varName, varValue, words, inputfile):
             for i in words[2:]:
                 if i.lower() == "ctrl" or i.lower() == "control":
                     keyboard.press(Key.ctrl); keyboard.release(Key.ctrl)
-                elif i.lower() == "shift":
-                    try: comment = words[3]
-                    except IndexError: keyboard.press(Key.shift); keyboard.release(Key.shift)
-                    else:
-                        keyboard.press(Key.shift); keyboard.press(words[3])
-                        keyboard.release(words[3]); keyboard.release(Key.shift)              
+                elif i.lower() == "shift": keyboard.press(Key.shift); keyboard.release(Key.shift)             
                 elif i.lower() == "alt" or i.lower() == "option": keyboard.press(Key.alt); keyboard.release(Key.alt)
                 elif i.lower() == "copy":
                     keyboard.press(Key.ctrl); keyboard.press('c')
