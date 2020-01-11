@@ -130,7 +130,7 @@ def commands(varName, varValue, words, inputfile):
                 elif i.lower() == "left": keyboard.press(Key.left); keyboard.release(Key.left)
                 elif i.lower() == "up": keyboard.press(Key.up); keyboard.release(Key.up)
                 elif i.lower() == "backspace": keyboard.press(Key.backspace); keyboard.release(Key.backspace)
-                elif i.lower() == "": keyboard.press(Key.backspace); keyboard.release(Key.backspace)        
+                elif i.lower() == "space": keyboard.press(Key.space); keyboard.release(Key.space)       
                 else: keyboard.type(i)
         elif words[1].lower() == "type":
             typecontents = ' '.join([str(elem) for elem in words[2:]])
