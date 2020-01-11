@@ -16,6 +16,7 @@ Pytch is a scripting language design to be for absolute begineers.
 #### [Simulate Keyboard and Mouse Inputs](https://github.com/BatchSource/PytchScript/blob/master/README.md#simulate-keyboard-and-mouse-inputs-1)
 
 [`Keyboard Presses`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-presses) [`Keyboard Typing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-typing) [`Cursor Clicks`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-clicks) [`Cursor Movements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-movements)
+
 ----------------------
 
 ## Installation
