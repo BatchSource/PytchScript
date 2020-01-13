@@ -1,7 +1,7 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-# [Download v2.0](https://www.dropbox.com/s/iss7rljf5x00zqm/Pytch.exe?dl=1)
+# [Download v2.1](https://www.dropbox.com/s/s8lzkwzhg2ojqpb/Pytch21.exe?dl=1)
 
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
@@ -9,7 +9,7 @@ Pytch is a scripting language design to be for absolute begineers.
 
 #### [Variables, Input, and Output](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables-input-and-output-1)
 
-[`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Beep`](https://github.com/BatchSource/PytchScript/blob/master/README.md#beep) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
+[`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Beep`](https://github.com/BatchSource/PytchScript/blob/master/README.md#beep) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`TTS`](https://github.com/BatchSource/PytchScript/blob/master/README.md#tts) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
 
 #### [Logic, Comments, and Misc](https://github.com/BatchSource/PytchScript/blob/master/README.md#logic-comments-and-misc-1)
 
@@ -32,7 +32,7 @@ Clone the repository and unzip it somewhere in your desktop. That folder will co
 If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file.
 You can execute commands like this:
 ```
-pytch -c say Hello World
+pytch21 -c say Hello World
 ```
 
 ## Getting Started
@@ -50,11 +50,11 @@ cd C:\Users\PytchScript\Desktop\PytchScript-master\
 ```
 Now to run it. Go ahead and type in the following:
 ```
-pytch -r "<path to the pytch file>"
+pytch21 -r "<path to the pytch file>"
 ```
 Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
 ```
-pytch -r "C:\Users\PytchScript\Desktop\file.pytch"
+pytch21 -r "C:\Users\PytchScript\Desktop\file.pytch"
 ```
 As soon as you press enter, you should see the following:
 ```
@@ -65,7 +65,7 @@ Great, you created your first Pytch program! The next sections will teach you mo
 ### Console
 You can activate the console by doing:
 ```
-pytch --console
+pytch21 --console
 ```
 However, you cannot use goto in the the Pytch console.
 
@@ -215,6 +215,15 @@ You can title a Pytch script by running:
 title Hello
 ```
 This will title the prompt Hello.
+
+### TTS
+
+You can use `speak` or `tts` to for text to speech.
+```
+speak Hello World!
+// OR
+tts Hello World!
+```
 
 ### Spacing
 Pytch is designed be an "oops proof" language, meaning that it is not very picky about how you write. 
@@ -560,9 +569,9 @@ The syntax for this command is:
 ```
 gui varName msgbox --title: Your title here --text: Your text here.
 // OR
-gui varName msgbox title Your title here text Your text here.
+gui varName msgbox -title Your title here -text Your text here.
 ```
-You can use the `--text:` or `--title:` instead of `text` and `title` to be more organized.
+You can use the `--text:` or `--title:` instead of `-text` and `-title` to be more organized.
 This will create a simple message box gui. When the user clicks `OK`, it will set `varName` to be `OK`.
 
 It also pauses the script until the user click "X" or "OK". If you do not want to pause the script, you can use `cmd msg * Your message here`.
@@ -573,7 +582,7 @@ The command is:
 ```
 gui varName textbox --title: Your title here --text: Your question/text here --prompt: Optional prompt here.
 // OR
-gui varName textbox title Your title here text Your question/text here prompt Optional prompt here.
+gui varName textbox -title Your title here -text Your question/text here -prompt Optional prompt here.
 ```
 The `prompt` command is optional, and is used to automatically put text in the textbox before the user types anything.
 
@@ -585,7 +594,7 @@ The command is:
 ```
 gui varName textbox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
 // OR
-gui varName textbox title Your title here text Your question/text here buttons Button1 Button2 Button3 Button4
+gui varName textbox -title Your title here -text Your question/text here -buttons Button1 Button2 Button3 Button4
 ```
 This will give users a list of buttons to choose from.
 This command will set the name of the button pressed to `varName`.
