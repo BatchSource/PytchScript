@@ -10,15 +10,19 @@ Pytch is a scripting language design to be for absolute begineers.
 
 #### [Variables, Input, and Output](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables-input-and-output-1)
 
-[`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
+[`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Beep`](https://github.com/BatchSource/PytchScript/blob/master/README.md#beep) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
 
 #### [Logic, Comments, and Misc](https://github.com/BatchSource/PytchScript/blob/master/README.md#logic-comments-and-misc-1)
 
-[`Comments`](https://github.com/BatchSource/PytchScript/blob/master/README.md#comments) [`Goto`](https://github.com/BatchSource/PytchScript/blob/master/README.md#goto) [`If statements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements) [`If statements (multiple lines)`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements-with-multiple-lines) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input) [`If, and, else, or`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-and-else-or) [`Random`](https://github.com/BatchSource/PytchScript/blob/master/README.md#random) [`Integer Operatons`](https://github.com/BatchSource/PytchScript/blob/master/README.md#integer-operations) [`Float Operations`](https://github.com/BatchSource/PytchScript/blob/master/README.md#float-operations) [`For loops`](https://github.com/BatchSource/PytchScript/blob/master/README.md#for-loops)
+[`Comments`](https://github.com/BatchSource/PytchScript/blob/master/README.md#comments) [`Goto`](https://github.com/BatchSource/PytchScript/blob/master/README.md#goto) [`If statements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements) [`If statements (multiple lines)`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-statements-with-multiple-lines) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input) [`If, and, else, or`](https://github.com/BatchSource/PytchScript/blob/master/README.md#if-and-else-or) [`Set command functions`](https://github.com/BatchSource/PytchScript/blob/master/README.md#set-command-functions) [`Random`](https://github.com/BatchSource/PytchScript/blob/master/README.md#random) [`Integer Operatons`](https://github.com/BatchSource/PytchScript/blob/master/README.md#integer-operations) [`Float Operations`](https://github.com/BatchSource/PytchScript/blob/master/README.md#float-operations) [`For loops`](https://github.com/BatchSource/PytchScript/blob/master/README.md#for-loops)
 
 #### [Simulate Keyboard and Mouse Inputs](https://github.com/BatchSource/PytchScript/blob/master/README.md#simulate-keyboard-and-mouse-inputs-1)
 
 [`Keyboard Presses`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-presses) [`Keyboard Typing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#keyboard-typing) [`Cursor Clicks`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-clicks) [`Cursor Movements`](https://github.com/BatchSource/PytchScript/blob/master/README.md#cursor-movements)
+
+#### [GUIs and Special Variables](https://github.com/BatchSource/PytchScript/blob/master/README.md#guis-and-special-variables-1)
+
+[`Types of GUIs`](https://github.com/BatchSource/PytchScript/blob/master/README.md#types-of-guis) [`Msgbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#msgbox) [`Textbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#textbox) [`Buttonbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#buttonbox) [`Special Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#special-variables)
 
 ----------------------
 
@@ -146,6 +150,28 @@ For example,
 wait 1000
 ```
 This will wait for 1000 miliseconds, or one whole second.
+You could also use `wait 1000 ms` and `wait 1000 milliseconds` for milliseconds.
+
+You can also run:
+```
+wait 1 sec
+// OR
+wait 1 second
+```
+To wait 1 second.
+
+### Beep
+You can use the `beep` or the `play` command to play frequencies inside the terminal.
+For example, you can write:
+```
+beep 250 freq 1000
+```
+This will play a frequency of 1000 for 250 ms.
+You can also use the note command to play piano notes.
+```
+beep 250 note e5 d#5 e5 d#5 b#4 d5 c5 a4
+// You can run multiple notes in order like this without having to create a new line for each one.
+```
 
 ### Pause
 This will pause the script, similar to `pause` from batch.
@@ -320,6 +346,12 @@ if [int1] > [int2] say Hello
 ```
 This will compare the variables `int1` and `int2`.
 
+You could also use `if defined` to check to see if something is defined.
+For example:
+```
+if defined var1     say Hello
+if not defined var1 say Goodbye
+```
 ### If statements with multiple lines
 We can create if statements with mutiple commands by doing:
 ```
@@ -364,6 +396,31 @@ set var1 to hello
 if [var1] =   hello   say CORRECT
 if [var1] NOT hello   say INCORRECT
 ```
+### Set command functions
+In the set command, there are different multiple cuntions.
+
+The first feature is to grab specific characters from a string.
+For example, you can use:
+```
+set var =.char 1 3 Hello World
+```
+...to grab the first to 3 characters of the string "Hello World".
+This would set var to `Hel`, because it is the first 3 character of "Hello World".
+
+The next feature is to use "`.len`". This can be used to calculate the legnth of a string.
+For example:
+```
+set var =.len Hello World
+```
+This will set `var` to be "`10`" because the legnth of "Hello World" is 10 characters long.
+
+Next we have the `.upper` and `.lower` to convert the case to either be uppercase or lowercase.
+For example:
+```
+set var1 =.upper Hello World
+set var2 =.lower Hello World
+```
+This will set `var1` to `HELLO WORLD` and `var2` to `hello world`.
 
 ### Random
 This sets a random to be in a range from 1 to a number.
@@ -490,4 +547,71 @@ For example:
 key cursor move 10 20
 ```
 
-This will move the cursor pointer to the screen pixel X:10 and Y:20. 
+This will move the cursor pointer to the screen pixel X:10 and Y:20.
+
+## GUIs and Special Variables
+
+### Types of GUIs
+There are 3 types of GUIs in pytch.
+`msgbox`, `textbox`, and `buttonbox`.
+
+### Msgbox
+The `msgbox`/`messagebox` GUI is for create alerts for the user.
+The syntax for this command is:
+```
+gui varName msgbox --title: Your title here --text: Your text here.
+// OR
+gui varName msgbox title Your title here text Your text here.
+```
+You can use the `--text:` or `--title:` instead of `text` and `title` to be more organized.
+This will create a simple message box gui. When the user clicks `OK`, it will set `varName` to be `OK`.
+
+It also pauses the script until the user click "X" or "OK". If you do not want to pause the script, you can use `cmd msg * Your message here`.
+
+### Textbox
+The next type of GUI is the textbox. This can be used to get a user input from the user in a GUI application.
+The command is:
+```
+gui varName textbox --title: Your title here --text: Your question/text here --prompt: Optional prompt here.
+// OR
+gui varName textbox title Your title here text Your question/text here prompt Optional prompt here.
+```
+The `prompt` command is optional, and is used to automatically put text in the textbox before the user types anything.
+
+This command will set the contents of the textbox to `varName`.
+
+### Buttonbox
+The final type of GUI is the Buttonbox. This is used to give the user a list of buttons to choose from.
+The command is:
+```
+gui varName textbox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
+// OR
+gui varName textbox title Your title here text Your question/text here buttons Button1 Button2 Button3 Button4
+```
+This will give users a list of buttons to choose from.
+This command will set the name of the button pressed to `varName`.
+
+### Special Variables
+These variables use {} instead of []. They are variables built into the language.
+(Note: These variables don't update when the in-line forloop command is on. For example, `-1 say {time}` will not update the variable value and just repeat the value it was at when the loop started.)
+
+Here is a list of all the special variables and their functions:
+```
+{space}           // creates a space. does the exact same thing as &
+{amp}             // creates an ampersand (normal ampersands turn into spaces)
+{home}            // the %userprofile% directory
+{file}            // the current file name the script is running of off.
+{time}            // HH:MM:SS, similar to %time% in batch
+{time12}          // HH:MM:SS PM, 12h time, similar to the "time /t" command in batch
+{date}            // YYYY-MM-DD, for example: 2020-09-15
+{weekday}         // DAY, for example: Mon
+{cursorpos}       // The current cursor position
+{cursorposX}      // The cursor X position
+{cursorposY}      // The cursor Y position
+{cursorcolor}     // The pixel under the cursor's RGB value
+{cursorcolorR}    // The pixel under the cursor's R (RGB) value
+{cursorcolorG}    // The pixel under the cursor's G (RGB) value
+{cursorcolorB}    // The pixel under the cursor's B (RGB) value
+{cursorcolorHex}  // The pixel under the cursor's Hex value
+{cursorcolorName} // The pixel under the cursor's closest CSS color name
+```
