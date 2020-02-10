@@ -605,7 +605,7 @@ This command will set the contents of the textbox to `varName`.
 
 ### Buttonbox/Choicebox
 The final type of GUI is the Buttonbox. This is used to give the user a list of buttons to choose from.
-You could also use 'choicebox' for a different interface.
+You could also use "`choicebox`" for a different interface.
 
 The command is:
 ```
