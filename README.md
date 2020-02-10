@@ -109,7 +109,7 @@ print <text>
 echo <text>
 ```
 
-#### Output: String
+### Output: String
 
 Replace text with whatever you want, or leave it like that, nothing is stopping you.
 ```
@@ -120,7 +120,7 @@ That outputs:
 This is the say command in Pytch!
 ```
 
-#### Output: Variable
+### Output: Variable
 
 To output a variable:
 ```
@@ -132,7 +132,7 @@ Which outputs:
 The value of myVar is 10!
 ```
 
-##### Output: Empty line
+### Output: Empty line
 
 You can use `say.` to easity
 A simple way to create a blank line is:
@@ -148,7 +148,7 @@ Outputs:
 1234
 ```
 
-##### Output: Clear
+### Output: Clear
 
 Cls/clear can be used like this:
 ```
