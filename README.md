@@ -32,7 +32,7 @@ Clone the repository and unzip it somewhere in your desktop. That folder will co
 If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file.
 You can execute commands like this:
 ```
-pytch21 -c say Hello World
+pytch22 -c say Hello World
 ```
 
 ## Getting Started
@@ -50,11 +50,11 @@ cd C:\Users\PytchScript\Desktop\PytchScript-master\
 ```
 Now to run it. Go ahead and type in the following:
 ```
-pytch21 -r "<path to the pytch file>"
+pytch22 -r "<path to the pytch file>"
 ```
 Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
 ```
-pytch21 -r "C:\Users\PytchScript\Desktop\file.pytch"
+pytch22 -r "C:\Users\PytchScript\Desktop\file.pytch"
 ```
 As soon as you press enter, you should see the following:
 ```
@@ -65,7 +65,7 @@ Great, you created your first Pytch program! The next sections will teach you mo
 ### Console
 You can activate the console by doing:
 ```
-pytch21 --console
+pytch22 --console
 ```
 However, you cannot use goto in the the Pytch console.
 
