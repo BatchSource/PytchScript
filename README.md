@@ -1,7 +1,7 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-# [Download v2.1](https://www.dropbox.com/s/s8lzkwzhg2ojqpb/Pytch21.exe?dl=1)
+# [Download v2.2](https://www.dropbox.com/s/mseq9a6jpzefjeh/Pytch22.exe?dl=1)
 
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
@@ -21,7 +21,7 @@ Pytch is a scripting language design to be for absolute begineers.
 
 #### [GUIs and Special Variables](https://github.com/BatchSource/PytchScript/blob/master/README.md#guis-and-special-variables-1)
 
-[`Types of GUIs`](https://github.com/BatchSource/PytchScript/blob/master/README.md#types-of-guis) [`Msgbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#msgbox) [`Textbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#textbox) [`Buttonbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#buttonbox) [`Special Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#special-variables)
+[`Types of GUIs`](https://github.com/BatchSource/PytchScript/blob/master/README.md#types-of-guis) [`Msgbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#msgbox) [`Textbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#textbox) [`Buttonbox/Choicebox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#buttonbox-choicebox) [`Special Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#special-variables)
 
 ----------------------
 
@@ -588,13 +588,19 @@ The `prompt` command is optional, and is used to automatically put text in the t
 
 This command will set the contents of the textbox to `varName`.
 
-### Buttonbox
+### Buttonbox/Choicebox
 The final type of GUI is the Buttonbox. This is used to give the user a list of buttons to choose from.
+You could also use 'choicebox' for a different interface.
+
 The command is:
 ```
-gui varName textbox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
-// OR
-gui varName textbox -title Your title here -text Your question/text here -buttons Button1 Button2 Button3 Button4
+//FOR BUTTONBOX:
+gui varName buttonbox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
+gui varName buttonbox -title Your title here -text Your question/text here -buttons Button1 Button2 Button3 Button4
+// FOR CHOICEBOX:
+gui varName choicebox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
+gui varName choicebox -title Your title here -text Your question/text here -choices Choice1 Choice2 Choice3 Choice4
+
 ```
 This will give users a list of buttons to choose from.
 This command will set the name of the button pressed to `varName`.
