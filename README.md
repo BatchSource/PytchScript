@@ -44,7 +44,7 @@ say Hello, World!
 ```
 Now save it as a .pytch file.
 
-To run the file go ahead and open up Command Prompt and cd into the directory where Pytch.py is located, in this case we extracted it into our desktop, so lets cd into the directory.
+To run the file, download the latest version of Pytch and move it into a folder on your desktop. Now, cd to the fodler and run the Pytch executable.
 ```
 cd "%USERPROFILE%\Desktop\PytchScript-master"
 ```
@@ -320,15 +320,15 @@ Some examples of this are:
 ```
 set var1 = 10
 set var2 = 20
-if 10 = 10 write 1
-if 10 = 20 write 2
-if 10 > 5 write 3
-if 50 < 10 write 4
+if 10 = 10  write 1
+if 10 = 20  write 2
+if 10 > 5   write 3
+if 50 < 10  write 4
 if 50 != 40 write 5
 if 50 >= 50 write 6
-if 10 >= 4 write 7
-if [var1] = 10 write 8
-if [var1] = [var2] write 9
+if 10 >= 4  write 7
+if [var1] = 10      write 8
+if [var1] = [var2]  write 9
 ```
 Which outputs:
 ```
