@@ -21,7 +21,7 @@ Pytch is a scripting language design to be for absolute begineers.
 
 #### [GUIs and Special Variables](https://github.com/BatchSource/PytchScript/blob/master/README.md#guis-and-special-variables-1)
 
-[`Types of GUIs`](https://github.com/BatchSource/PytchScript/blob/master/README.md#types-of-guis) [`Msgbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#msgbox) [`Textbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#textbox) [`Buttonbox/Choicebox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#buttonbox-choicebox) [`Special Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#special-variables)
+[`Types of GUIs`](https://github.com/BatchSource/PytchScript/blob/master/README.md#types-of-guis) [`Msgbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#msgbox) [`Textbox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#textbox) [`Buttonbox/Choicebox`](https://github.com/BatchSource/PytchScript/blob/master/README.md#buttonboxchoicebox) [`Special Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#special-variables)
 
 ----------------------
 
