@@ -72,6 +72,7 @@ However, you cannot use goto in the the Pytch console.
 ### Start.bat
 If you don't want to activate the terminal every time you want to run a file, you can click and drag the `.pytch` file over `start.bat` in explorer.
 You can open the console just by normally double-clicking `start.bat` in explorer.
+You can download start.bat [here](https://raw.githubusercontent.com/BatchSource/PytchScript/master/start.bat).
 
 ## Variables, Input, and Output
 ### Variables
@@ -102,7 +103,13 @@ set myvar remove
 Now for output. To output, all you do is:
 ```
 say <text>
+// OR
+print <text>
+// OR
+echo <text>
 ```
+
+###### Output String
 Replace text with whatever you want, or leave it like that, nothing is stopping you.
 ```
 say This is the say command in Pytch!
@@ -111,6 +118,8 @@ That outputs:
 ```
 This is the say command in Pytch!
 ```
+
+###### Output Variable
 To output a variable:
 ```
 set myVar = 10
@@ -120,25 +129,27 @@ Which outputs:
 ```
 The value of myVar is 10!
 ```
+
+###### Output Empty line
+You can use `say.` to easity
 A simple way to create a blank line is:
 ```
-say lol
+say 1234
 say.
-say lol
+say 1234
 ```
 Outputs:
 ```
-lol
+1234
 
-lol
+1234
 ```
 
+###### Clearing output
 Cls/clear can be used like this:
 ```
 clear
-```
-Or:
-```
+// OR
 cls
 ```
 
