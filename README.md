@@ -1,7 +1,7 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-# [Download v2.2](https://www.dropbox.com/s/mseq9a6jpzefjeh/Pytch22.exe?dl=1)
+# [Download v2.2](https://www.dropbox.com/s/9d62b1t7t4c6vu3/Pytch22.exe?dl=1)
 
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
@@ -29,10 +29,12 @@ Pytch is a scripting language design to be for absolute begineers.
 
 Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file. You do not need to install any development software.
 
-If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file.
-You can execute commands like this:
+If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch22 -c say Hello World`
+
+Start the Pytch22 console like this:
+
 ```
-pytch22 -c say Hello World
+Pytch22 -c
 ```
 
 ## Getting Started
