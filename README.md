@@ -609,9 +609,10 @@ You could also use 'choicebox' for a different interface.
 
 The command is:
 ```
-//FOR BUTTONBOX:
+// FOR BUTTONBOX:
 gui varName buttonbox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
 gui varName buttonbox -title Your title here -text Your question/text here -buttons Button1 Button2 Button3 Button4
+
 // FOR CHOICEBOX:
 gui varName choicebox --title: Your title here --text: Your question/text here --buttons: Button1 Button2 Button3 Button4
 gui varName choicebox -title Your title here -text Your question/text here -choices Choice1 Choice2 Choice3 Choice4
