@@ -1,6 +1,6 @@
 @echo off&cd "%~dp0"
 if "%~1"=="" (title Pytch - Console
-pytch -c
+pytch22 -c
 ) else (
 title Pytch - "%~1"
 pytch -r "%~1"
