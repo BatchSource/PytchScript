@@ -46,7 +46,7 @@ Now save it as a .pytch file.
 
 To run the file go ahead and open up Command Prompt and cd into the directory where Pytch.py is located, in this case we extracted it into our desktop, so lets cd into the directory.
 ```
-cd C:\Users\PytchScript\Desktop\PytchScript-master\
+cd "%USERPROFILE%\Desktop\PytchScript-master"
 ```
 Now to run it. Go ahead and type in the following:
 ```
