@@ -31,6 +31,7 @@ Clone the repository and unzip it somewhere in your desktop. That folder will co
 If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch23.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch23 -c say Hello World`.
 
 You can start the Pytch23 console just by opening the executable.
+
 To run a file, just drag & drop the file you wish to run over it.
 
 ## Getting Started
