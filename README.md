@@ -26,13 +26,13 @@ Pytch is a scripting language design to be for absolute begineers.
 
 ## Installation
 
-Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file. You do not need to install any development software.
-
-If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch23.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch23 -c say Hello World`.
+Download the latest verision of Pytch. This file will contain all the necessary files to run and compile a Pytch file. You do not need to install any development software.
 
 You can start the Pytch23 console just by opening the executable.
 
 To run a file, just drag & drop the file you wish to run over it.
+
+If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch23.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch23 -c say Hello World`.
 
 ## Getting Started
 So now you have Pytch in your desktop, but now what? We don't have any code written for it so lets write something simple, a hello world program!
@@ -43,22 +43,10 @@ say Hello, World!
 ```
 Now save it as a .pytch file.
 
-To run the file, download the latest version of Pytch and move it into a folder on your desktop. Now, cd to the fodler and run the Pytch executable.
-```
-cd "%USERPROFILE%\Desktop\PytchScript-master"
-```
-Now to run it. Go ahead and type in the following:
-```
-pytch23 -r "<path to the pytch file>"
-```
-Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
-```
-pytch23 -r "C:\Users\PytchScript\Desktop\file.pytch"
-```
-As soon as you press enter, you should see the following:
-```
-Hello, World!
-```
+To run the file, download the latest version of Pytch. Now, all you have to do is click and drag the .pytch file over to the Pytch23 executable file.
+
+As soon as you run your script, you should see `Hello, World!` written in a console window.
+
 Great, you created your first Pytch program! The next sections will teach you more about the commands and syntax, and different build options for Pytch.
 
 ### Console
@@ -66,9 +54,9 @@ You can activate the console by doing:
 ```
 pytch23 --console
 ```
-Or just opening the executable file.
+Or, by just opening the executable file by double-clicking it.
 
-However, you cannot use goto in the the Pytch console.
+You cannot use goto in the the Pytch console.
 
 ## Variables, Input, and Output
 ### Variables
