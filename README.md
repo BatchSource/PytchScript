@@ -1,12 +1,11 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-# [Download v2.2](https://www.dropbox.com/s/9d62b1t7t4c6vu3/Pytch22.exe?dl=1)
+# [Download v2.3](https://www.dropbox.com/s/3ic0bacnkul8vcl/Pytch23.exe?dl=1)
 
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
-[`Installation`](https://github.com/BatchSource/PytchScript/blob/master/README.md#installation) [`Getting Started`](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1) [`Console`](https://github.com/BatchSource/PytchScript/blob/master/README.md#console) [`Start.bat`](https://github.com/BatchSource/PytchScript/blob/master/README.md#Console)
-
+[`Installation`](https://github.com/BatchSource/PytchScript/blob/master/README.md#installation) [`Getting Started`](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1) [`Console`](https://github.com/BatchSource/PytchScript/blob/master/README.md#console)
 #### [Variables, Input, and Output](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables-input-and-output-1)
 
 [`Variables`](https://github.com/BatchSource/PytchScript/blob/master/README.md#variables) [`Output`](https://github.com/BatchSource/PytchScript/blob/master/README.md#output) [`Wait`](https://github.com/BatchSource/PytchScript/blob/master/README.md#wait) [`Beep`](https://github.com/BatchSource/PytchScript/blob/master/README.md#beep) [`Pause`](https://github.com/BatchSource/PytchScript/blob/master/README.md#pause) [`Write`](https://github.com/BatchSource/PytchScript/blob/master/README.md#write) [`Writing\calling file`](https://github.com/BatchSource/PytchScript/blob/master/README.md#writingcalling-a-file) [`Title`](https://github.com/BatchSource/PytchScript/blob/master/README.md#title) [`Spacing`](https://github.com/BatchSource/PytchScript/blob/master/README.md#spacing) [`TTS`](https://github.com/BatchSource/PytchScript/blob/master/README.md#tts) [`Input`](https://github.com/BatchSource/PytchScript/blob/master/README.md#input)
@@ -29,13 +28,10 @@ Pytch is a scripting language design to be for absolute begineers.
 
 Clone the repository and unzip it somewhere in your desktop. That folder will contain all the necessary files to run and compile a Pytch file. You do not need to install any development software.
 
-If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch22 -c say Hello World`
+If you want to execute a pytch command in a batch file, you can either add pytch to the `%path%` variable or move `Pytch23.exe` to the same directory as the batch file. You can execute commands in batch like this: `pytch23 -c say Hello World`.
 
-Start the Pytch22 console like this:
-
-```
-Pytch22 -c
-```
+You can start the Pytch23 console just by opening the executable.
+To run a file, just drag & drop the file you wish to run over it.
 
 ## Getting Started
 So now you have Pytch in your desktop, but now what? We don't have any code written for it so lets write something simple, a hello world program!
@@ -52,11 +48,11 @@ cd "%USERPROFILE%\Desktop\PytchScript-master"
 ```
 Now to run it. Go ahead and type in the following:
 ```
-pytch22 -r "<path to the pytch file>"
+pytch23 -r "<path to the pytch file>"
 ```
 Replace <path to the pytch file> with the path of the file. So if we have the Pytch file in our desktop, then it would be:
 ```
-pytch22 -r "C:\Users\PytchScript\Desktop\file.pytch"
+pytch23 -r "C:\Users\PytchScript\Desktop\file.pytch"
 ```
 As soon as you press enter, you should see the following:
 ```
@@ -67,14 +63,11 @@ Great, you created your first Pytch program! The next sections will teach you mo
 ### Console
 You can activate the console by doing:
 ```
-pytch22 --console
+pytch23 --console
 ```
-However, you cannot use goto in the the Pytch console.
+Or just opening the executable file.
 
-### Start.bat
-If you don't want to activate the terminal every time you want to run a file, you can click and drag the `.pytch` file over `start.bat` in explorer.
-You can open the console just by normally double-clicking `start.bat` in explorer.
-You can download start.bat [here](https://raw.githubusercontent.com/BatchSource/PytchScript/master/start.bat).
+However, you cannot use goto in the the Pytch console.
 
 ## Variables, Input, and Output
 ### Variables
@@ -422,7 +415,7 @@ if [var1] =   hello   say CORRECT
 if [var1] NOT hello   say INCORRECT
 ```
 ### Set command functions
-In the set command, there are different multiple cuntions.
+In the set command, there are different multiple functions.
 
 The first feature is to grab specific characters from a string.
 For example, you can use:
@@ -432,12 +425,12 @@ set var =.char 1 3 Hello World
 ...to grab the first to 3 characters of the string "Hello World".
 This would set var to `Hel`, because it is the first 3 character of "Hello World".
 
-The next feature is to use "`.len`". This can be used to calculate the legnth of a string.
+The next feature is to use "`.len`". This can be used to calculate the length of a string.
 For example:
 ```
 set var =.len Hello World
 ```
-This will set `var` to be "`10`" because the legnth of "Hello World" is 10 characters long.
+This will set `var` to be "`10`" because the length of "Hello World" is 10 characters long.
 
 Next we have the `.upper` and `.lower` to convert the case to either be uppercase or lowercase.
 For example:
