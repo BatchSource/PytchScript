@@ -3,6 +3,9 @@ Pytch is a scripting language design to be for absolute begineers.
 
 # [Download v2.4](https://www.dropbox.com/s/hemaehfpjzablu0/Pytch24.exe?dl=1)
 
+### [View Changelog](https://github.com/BatchSource/PytchScript/blob/master/changelog.md)
+<hr width=30>
+
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
 [`Installation`](https://github.com/BatchSource/PytchScript/blob/master/README.md#installation) [`Getting Started`](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1) [`Console`](https://github.com/BatchSource/PytchScript/blob/master/README.md#console)
