@@ -1,7 +1,7 @@
 # PytchScript
 Pytch is a scripting language design to be for absolute begineers.
 
-# [Download v2.3](https://www.dropbox.com/s/3ic0bacnkul8vcl/Pytch23.exe?dl=1)
+# [Download v2.4](https://www.dropbox.com/s/hemaehfpjzablu0/Pytch24.exe?dl=1)
 
 #### [Getting started](https://github.com/BatchSource/PytchScript/blob/master/README.md#getting-started-1)
 
