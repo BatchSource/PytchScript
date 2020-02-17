@@ -24,18 +24,18 @@
     set <varname> cmd <command>    // Get the output of a terminal command
     set <varname> ord <list>       // Get a list of corresponding ASCII #s
     set <varname> chr <list>       // Get a string of corresponding ASCII chars
--  New commands added similar to the new set commands, but print the output to the console instead of setting it to a variable/list.
-  ```
-  char <start> <end> <string>
-  len <string>
-  listlen <list>
-  upper <string>
-  lower <string>
-  reverse <string>
-  listreverse <list>
-  ord <list>
-  chr <list>
-  ```
+-  New commands added (similar to the new set commands, but print the output to the console instead of setting it to a variable/list).
+    ```
+    char <start> <end> <string>
+    len <string>
+    listlen <list>
+    upper <string>
+    lower <string>
+    reverse <string>
+    listreverse <list>
+    ord <list>
+    chr <list>
+    ```
 - New console write command to change the color of the output.
   Possible commands include `csay`/`cecho`/`cprint` or `say.color`/`echo.color`/`print.color`.
 
