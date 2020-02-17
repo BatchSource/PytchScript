@@ -12,15 +12,15 @@
 - New/changed syntax for types of variables. Here is a list of the possible commands for the `set` function:
 
     ```
-    set <varname> input <prompt>            // Get user input
+    set <varname> input <prompt>               // Get user input
     set <varname> char <start> <end> <string>  // Grab range of characters
-    set <varname> len <string>              // Get the legnth of a string
-    set <varname> listlen <list>            // Get the legnth of a list
-    set <varname> upper <string>            // Convert to uppercase
-    set <varname> lower <string>            // Convert to lowercase
-    set <varname> reverse <string>          // Reverse a string
-    set <varname> listreverse <list>        // Reverse a list
-    set <varname> remove                    // Undefine a variable
+    set <varname> len <string>                 // Get the legnth of a string
+    set <varname> listlen <list>               // Get the legnth of a list
+    set <varname> upper <string>               // Convert to uppercase
+    set <varname> lower <string>               // Convert to lowercase
+    set <varname> reverse <string>             // Reverse a string
+    set <varname> listreverse <list>           // Reverse a list
+    set <varname> remove                       // Undefine a variable
     set <varname> cmd <command>    // Get the output of a terminal command
     set <varname> ord <list>       // Get a list of corresponding ASCII #s
     set <varname> chr <list>       // Get a string of corresponding ASCII chars
@@ -55,7 +55,7 @@
 ---
 
 ### [`2.4`](https://www.dropbox.com/s/hemaehfpjzablu0/Pytch24.exe?dl=1)
-- Optimimized/Organized the way variables are set.
+- Optimimized/organized the way variables are set.
 - Added `cmd`/`terminal` option to the `set` command to set the output of a cmd command to a variable. Syntax: `set var cmd dir`.
 - Added a `to.reverse`/`=.reverse` option to the `set` command.
 - You can now use `terminal` instead of `cmd` if you want.
