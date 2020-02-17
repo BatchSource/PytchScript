@@ -67,7 +67,7 @@
 
 ---
 
-#### [`2.3`](https://www.dropbox.com/s/3ic0bacnkul8vcl/Pytch23.exe?dl=1)
+### [`2.3`](https://www.dropbox.com/s/3ic0bacnkul8vcl/Pytch23.exe?dl=1)
 - Bug fixes
 - You can now click and drag files to run in Pytch.
 - Modified the help screen to show new options.
